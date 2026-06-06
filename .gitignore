@@ -1,0 +1,6 @@
+tree-sitter-todotxt/node_modules/
+.npm-cache/
+grammars/
+dist/
+target/
+extension.wasm

@@ -1,0 +1,24 @@
+{
+  "name": "tree-sitter-todotxt",
+  "version": "0.0.1",
+  "description": "Tree-sitter grammar for todo.txt files.",
+  "main": "grammar.js",
+  "license": "MIT",
+  "tree-sitter": [
+    {
+      "scope": "source.todotxt",
+      "file-types": [
+        "todotxt",
+        "todo.txt",
+        "done.txt"
+      ]
+    }
+  ],
+  "scripts": {
+    "generate": "tree-sitter generate",
+    "test": "tree-sitter test"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.25.10"
+  }
+}

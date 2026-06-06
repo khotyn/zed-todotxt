@@ -1,0 +1,129 @@
+[
+  {
+    "type": "active_task_prefix",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "creation_date",
+          "named": true
+        },
+        {
+          "type": "priority",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "completed_task_prefix",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "completed_marker",
+          "named": true
+        },
+        {
+          "type": "completion_date",
+          "named": true
+        },
+        {
+          "type": "creation_date",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "completion_date",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "creation_date",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "task",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "task",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "active_task_prefix",
+          "named": true
+        },
+        {
+          "type": "completed_task_prefix",
+          "named": true
+        },
+        {
+          "type": "context",
+          "named": true
+        },
+        {
+          "type": "metadata",
+          "named": true
+        },
+        {
+          "type": "project",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "completed_marker",
+    "named": true
+  },
+  {
+    "type": "context",
+    "named": true
+  },
+  {
+    "type": "metadata",
+    "named": true
+  },
+  {
+    "type": "priority",
+    "named": true
+  },
+  {
+    "type": "project",
+    "named": true
+  },
+  {
+    "type": "text",
+    "named": true
+  }
+]

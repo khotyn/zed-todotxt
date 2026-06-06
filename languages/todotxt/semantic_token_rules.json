@@ -1,0 +1,15 @@
+[
+  {
+    "token_type": "completedTask",
+    "style": ["comment"],
+    "strikethrough": true
+  },
+  {
+    "token_type": "overdueDue",
+    "foreground_color": "#8B0000"
+  },
+  {
+    "token_type": "activeDue",
+    "foreground_color": "#228B22"
+  }
+]

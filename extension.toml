@@ -1,0 +1,16 @@
+id = "todotxt"
+name = "Todo.txt"
+version = "0.0.1"
+schema_version = 1
+authors = ["khotyn"]
+description = "Syntax highlighting for todo.txt / .todotxt files."
+repository = "https://github.com/khotyn/zed-todotxt"
+
+[language_servers.todotxt-lsp]
+name = "Todo.txt LSP"
+language = "Todo.txt"
+language_ids = { "Todo.txt" = "todotxt" }
+
+[grammars.todotxt]
+repository = "file:///Users/khotyn/workspace/zed-todotxt/tree-sitter-todotxt"
+rev = "8287cc5cc560417d818a4578efa81aab49bae3c0"

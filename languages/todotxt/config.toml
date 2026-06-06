@@ -1,0 +1,6 @@
+name = "Todo.txt"
+grammar = "todotxt"
+path_suffixes = ["todotxt", "todo.txt", "done.txt"]
+line_comments = []
+tab_size = 2
+hard_tabs = false
