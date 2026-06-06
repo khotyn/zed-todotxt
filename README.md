@@ -22,8 +22,6 @@ The supported syntax follows the official [todo.txt format](https://github.com/t
 
    `/Users/khotyn/workspace/zed-todotxt`
 
-The extension currently points to the bundled Tree-sitter grammar with a local `file://` URL in `extension.toml`. If you move this directory, update that path.
-
 If an earlier install failed while compiling the grammar, run `Install Dev Extension` again after pulling these files. Zed may have created a transient `grammars/` checkout cache inside this directory; it is ignored by git and can be deleted safely.
 
 ## Archive Completed Tasks
@@ -34,20 +32,12 @@ Open a `todo.txt`, `done.txt`, or `.todotxt` file and run the quick fix named `A
 2. Moves lines that start with `x ` out of the current file.
 3. Appends those lines to `done.txt` in the same directory.
 
-The action is served by a small local language server, so it does not open or focus a terminal pane. The LSP entrypoint is:
-
-`/Users/khotyn/workspace/zed-todotxt/server/todotxt-lsp.mjs`
-
-If you move this extension directory, update the local grammar path in `extension.toml`.
+The action is served by a small language server, so it does not open or focus a terminal pane. Zed downloads the server from this extension's GitHub release assets on first use.
 
 ## Publishing Notes
 
-Before publishing, replace the local grammar URL in `extension.toml`:
+The Tree-sitter grammar is published separately at:
 
-```toml
-[grammars.todotxt]
-repository = "https://github.com/your-name/tree-sitter-todotxt"
-rev = "<commit-sha>"
-```
+`https://github.com/khotyn/tree-sitter-todotxt`
 
-Then set `repository` to the public extension repository URL.
+The `todotxt-lsp.mjs` language server must be attached to each GitHub release as a release asset.
