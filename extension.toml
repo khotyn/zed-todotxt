@@ -1,5 +1,5 @@
-id = "todotxt"
-name = "Todo.txt"
+id = "todo-txt-actions"
+name = "Todo.txt Actions"
 version = "0.0.1"
 schema_version = 1
 authors = ["khotyn"]
